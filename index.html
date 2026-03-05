@@ -31,7 +31,7 @@
     overflow-x: hidden;
   }
 
-  /* ── NOISE OVERLAY ── */
+  /* NOISE OVERLAY */
   body::before {
     content: '';
     position: fixed; inset: 0;
@@ -39,7 +39,6 @@
     pointer-events: none; z-index: 9999; opacity: .4;
   }
 
-  /* ── NAV ── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     padding: 1.2rem 4rem;
@@ -69,7 +68,6 @@
   }
   .nav-links a:hover { color: var(--accent); }
 
-  /* ── HERO ── */
   #hero {
     min-height: 100vh;
     display: flex; align-items: center;
@@ -221,7 +219,6 @@
     letter-spacing: 1px;
   }
 
-  /* ── SECTIONS ── */
   section { padding: 6rem 4rem; }
 
   .section-tag {
@@ -242,7 +239,6 @@
     margin-bottom: 3rem;
   }
 
-  /* ── ABOUT ── */
   #about { background: var(--surface); }
 
   .about-grid {
@@ -294,7 +290,6 @@
   .skill-tag.ml { border-color: rgba(124,58,237,.3); color: #a78bfa; }
   .skill-tag.dev { border-color: rgba(16,185,129,.3); color: var(--accent3); }
 
-  /* ── PROJECTS ── */
   #projects { background: var(--bg); }
 
   .projects-grid {
@@ -408,7 +403,6 @@
 
   .plink:hover { border-color: var(--accent); }
 
-  /* ── FEATURED PROJECT LAYOUT ── */
   .featured-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -450,7 +444,6 @@
   .code-line .num { color: #fbbf24; }
   .code-line .cm { color: #475569; }
 
-  /* ── EXPERIENCE ── */
   #experience { background: var(--surface); }
 
   .timeline { position: relative; padding-left: 2rem; }
@@ -500,7 +493,6 @@
   .timeline-body li { margin-bottom: .4rem; padding-left: 1rem; position: relative; }
   .timeline-body li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: .75rem; }
 
-  /* ── SKILLS ── */
   #skills { background: var(--bg); }
 
   .skills-grid {
@@ -528,7 +520,7 @@
   .skill-cat-title.c2 { color: #a78bfa; }
   .skill-cat-title.c3 { color: var(--accent3); }
   .skill-cat-title.c4 { color: #fbbf24; }
-  .skill-cat-title.c5 { color: #acfb24; }
+  .skill-cat-title.c5 { color: #f472b6; }
 
   .skill-bars { display: flex; flex-direction: column; gap: .8rem; }
 
@@ -560,7 +552,6 @@
   .fill-green { background: linear-gradient(90deg, var(--accent3), #6ee7b7); }
   .fill-yellow { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
 
-  /* ── CONTACT ── */
   #contact {
     background: var(--surface);
     text-align: center;
@@ -591,7 +582,6 @@
 
   .contact-link svg { width: 16px; height: 16px; }
 
-  /* ── FOOTER ── */
   footer {
     background: var(--bg);
     padding: 2rem 4rem;
@@ -603,7 +593,6 @@
 
   footer p { color: var(--muted); font-size: .8rem; font-family: 'Space Mono', monospace; }
 
-  /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -615,12 +604,10 @@
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* ── SCROLLBAR ── */
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: rgba(0,212,255,.3); border-radius: 4px; }
 
-  /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
@@ -636,7 +623,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">HS_portfolio</div>
   <ul class="nav-links">
@@ -648,7 +634,6 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-bg-grid"></div>
   <div class="hero-glow"></div>
@@ -678,7 +663,6 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <span class="section-tag">01 — Profil</span>
   <h2>À propos de moi</h2>
@@ -687,8 +671,8 @@
       <p>Je suis étudiante en 4ème année à l'<strong>ENSA El Jadida</strong>, filière Ingénierie Informatique et Technologies Émergentes. Ma spécialisation se concentre sur la <strong>Data Science</strong>, le <strong>Machine Learning</strong> et le <strong>Business Intelligence</strong>.</p>
       <p>Mon projet de fin d'année porte sur une <strong>application mobile de surveillance en temps réel de la santé et de la vigilance des conducteurs</strong>, dans lequel j'ai développé un <strong>modèle de détection de somnolence</strong> basé sur la vision par ordinateur (ouverture/fermeture des yeux) — démontrant ma capacité à intégrer des modèles ML dans des systèmes embarqués.</p>
       <div class="highlight-box">
-        <p>🎯 Objectif : Stage en Data Analytics / Data Engineering / ML/DL<br>
-        📍 El Jadida, Maroc — Disponible pour un stage d'été</p>
+        <p>Objectif : Stage en Data Analytics / Data Engineering / ML/DL<br>
+        El Jadida, Maroc — Disponible pour un stage d'été</p>
       </div>
     </div>
     <div class="reveal">
@@ -727,13 +711,11 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <span class="section-tag">02 — Projets</span>
   <h2>Projets Data & AI</h2>
   <div class="projects-grid">
 
-    <!-- FEATURED: Driver Monitoring -->
     <div class="project-card featured reveal">
       <div class="project-type type-ai">⭐ Projet phare — AI / Mobile</div>
       <div class="featured-inner">
@@ -775,7 +757,6 @@
       </div>
     </div>
 
-    <!-- Power BI / TAQA -->
     <div class="project-card reveal">
       <div class="project-type type-bi">Stage — BI & Data Quality</div>
       <h3>Profilage & Reporting Power BI — TAQA Morocco</h3>
@@ -790,7 +771,6 @@
       </div>
     </div>
 
-    <!-- Hébergements EDA -->
     <div class="project-card reveal">
       <div class="project-type type-data">Analyse exploratoire</div>
       <h3>Analyse de Données — Hébergements & Code Postal</h3>
@@ -805,7 +785,6 @@
       </div>
     </div>
 
-    <!-- Deep Learning - Séries temporelles -->
     <div class="project-card reveal">
       <div class="project-type type-dl">Deep Learning</div>
       <h3>Prétraitement de Données Temporelles</h3>
@@ -819,22 +798,18 @@
       </div>
     </div>
 
-    <!-- NLP / Données non structurées -->
-    <div class="project-card reveal">
-      <div class="project-type type-dl">ML — NLP</div>
-      <h3>Prétraitement de Données Non Structurées</h3>
-      <p>Pipeline complet de prétraitement de données textuelles non structurées avec toutes les étapes NLP : tokenisation, nettoyage, vectorisation.</p>
+    <div class="project-type type-dl">Deep Learning</div>
+      <h3>Prétraitement de Données Images (avec/sans Augmentation)</h3>
+      <p>Pipeline complet de prétraitement de données images non structurées : normalisation, redimensionnement, et augmentation de données pour améliorer la robustesse des modèles.</p>
       <div class="project-highlights">
-        <div class="project-highlight">Tokenisation et normalisation du texte</div>
-        <div class="project-highlight">Suppression des stopwords, stemming</div>
-        <div class="project-highlight">Vectorisation (TF-IDF / embeddings)</div>
+        <div class="project-highlight">Normalisation et redimensionnement des images</div>
+        <div class="project-highlight">Augmentation de données (rotation, flip, zoom...)</div>
+        <div class="project-highlight">Comparaison modèles avec/sans augmentation</div>
       </div>
-      <div class="project-tags">
-        <span class="ptag">Python</span><span class="ptag">NLP</span><span class="ptag">Sklearn</span><span class="ptag">Unstructured Data</span>
-      </div>
+    <div class="project-tags">
+      <span class="ptag">Python</span><span class="ptag">Image Processing</span><span class="ptag">Data Augmentation</span>
     </div>
 
-    <!-- ML Classification -->
     <div class="project-card reveal">
       <div class="project-type type-ai">Machine Learning</div>
       <h3>Modèles de Classification & Prédiction</h3>
@@ -852,7 +827,6 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience">
   <span class="section-tag">03 — Parcours</span>
   <h2>Formation & Expérience</h2>
@@ -899,7 +873,6 @@
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <span class="section-tag">04 — Compétences techniques</span>
   <h2>Stack technique</h2>
@@ -998,7 +971,6 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <span class="section-tag">05 — Contact</span>
   <div class="contact-inner reveal">
@@ -1022,14 +994,12 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2026 Hiba Sebban — El Jadida, Maroc</p>
   <p>Built By Hiba Sebban</p>
 </footer>
 
 <script>
-  // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('visible'); }
@@ -1038,7 +1008,6 @@
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Skill bar animation
   const barObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
